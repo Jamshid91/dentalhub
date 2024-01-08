@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/plugin/jquery.datepicker2.css">
+    <link rel="stylesheet" href="assets/css/plugin/swiper.css">
+    <link rel="stylesheet" href="assets/css/plugin/video.css">
+    <link rel="stylesheet" href="assets/css/plugin/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Главная</title>
+</head>
+<body>
+    <!-- START header -->
+    <header class="header position-relative">
+        <div class="header-top d-none d-lg-block">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <a href="./index.html" class="header-logo">
+                            <img src="assets/img/svg/logo.svg" alt="logo" class="logo">
+                        </a>
+                        <div class="d-flex align-items-center">
+                            <div class="header-top-info d-flex align-items-center">
+                                <img src="assets/img/svg/loc.svg" alt="icon">
+                                <div class="header-top-info-text">
+                                    <p><strong>Набережные Челны</strong></p>
+                                    <span>ул. Строительная, строение 4</span>
+                                </div>
+                            </div>
+                            <div class="header-top-info d-flex align-items-center">
+                                <img src="assets/img/svg/clock.svg" alt="icon">
+                                <div class="header-top-info-text">
+                                    <p><strong>ПН-ПТ</strong> 9:00-20:00 | <strong>СБ</strong> 10:00-16:00</p>
+                                    <span>График работы</span>
+                                </div>
+                            </div>
+                            <div class="header-top-info d-flex align-items-center">
+                                <img src="assets/img/svg/call.svg" alt="icon">
+                                <div class="header-top-info-text">
+                                    <p>415 - 970 - 5800</p>
+                                    <span>Круглосуточная горячая линия</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="call-btn">Обратный звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom position-absolute w-100 start-0 d-none d-lg-block">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="header-nav d-flex align-items-center justify-content-between">
+                            <ul class="nav-item d-flex">
+                                <li><a href="./company.html">О нас</a></li>
+                                <li><a href="./services.html">Услуги</a></li>
+                                <li><a href="./preys.html">Прайс</a></li>
+                                <li><a href="./sale.html">Акции</a></li>
+                                <li><a href="./faqs.html">FAQ</a></li>
+                                <li><a href="./reviews.html">Отзывы</a></li>
+                                <li><a href="./contact.html">Контакты</a></li>
+                            </ul>
+                            <ul class="nav-social d-flex">
+                                <li><a href="#"><img src="assets/img/svg/social1.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social2.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social3.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social4.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social5.svg" alt="social"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mob d-lg-none">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <a href="./index.html" class="header-logo">
+                            <img src="assets/img/svg/logo.svg" alt="logo" class="logo">
+                        </a>
+            
+                        <div class="menu-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20" fill="none">
+                                <path d="M24.9167 11.0668H1.08333C0.485333 11.0668 0 10.5815 0 9.98346C0 9.38546 0.485333 8.90013 1.08333 8.90013H24.9167C25.5147 8.90013 26 9.38546 26 9.98346C26 10.5815 25.5147 11.0668 24.9167 11.0668ZM24.9167 2.76115H1.08333C0.485333 2.76115 0 2.27582 0 1.67782C0 1.07982 0.485333 0.594482 1.08333 0.594482H24.9167C25.5147 0.594482 26 1.07982 26 1.67782C26 2.27582 25.5147 2.76115 24.9167 2.76115ZM24.9167 19.3722H1.08333C0.485333 19.3722 0 18.8868 0 18.2888C0 17.6908 0.485333 17.2055 1.08333 17.2055H24.9167C25.5147 17.2055 26 17.6908 26 18.2888C26 18.8868 25.5147 19.3722 24.9167 19.3722Z" fill="white"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 20 20" fill="none">
+                                <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu d-none">
+        <div class="menu-content">
+            <ul class="menu-nav">
+                <li><a href="./company.html">О нас</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./preys.html">Прайс</a></li>
+                <li><a href="./sale.html">Акции</a></li>
+                <li><a href="./faqs.html">FAQ</a></li>
+                <li><a href="./reviews.html">Отзывы</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+            </ul>
+            <div class="menu-box">
+                <div class="menu-box-info d-flex align-items-start">
+                    <img src="assets/img/svg/clock.svg" alt="icon">
+                    <div class="header-top-info-text">
+                        <p><strong>ПН-ПТ</strong> 9:00-20:00 | <strong>СБ</strong> 10:00-16:00</p>
+                        <span>График работы</span>
+                    </div>
+                </div>
+                <div class="menu-box-info d-flex align-items-start">
+                    <img src="assets/img/svg/loc.svg" alt="icon">
+                    <div class="header-top-info-text">
+                        <p><strong>Набережные Челны</strong></p>
+                        <span>ул. Строительная, строение 4</span>
+                    </div>
+                </div>
+                <div class="menu-box-info d-flex align-items-start">
+                    <img src="assets/img/svg/call.svg" alt="icon">
+                    <div class="header-top-info-text">
+                        <p><strong>415 - 970 - 5800</strong></p>
+                        <span>Круглосуточная горячая линия</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <ul class="menu-social d-flex">
+                        <li><a href="#"><img src="assets/img/svg/social1.svg" alt="social"></a></li>
+                        <li><a href="#"><img src="assets/img/svg/social2.svg" alt="social"></a></li>
+                        <li><a href="#"><img src="assets/img/svg/social3.svg" alt="social"></a></li>
+                        <li><a href="#"><img src="assets/img/svg/social4.svg" alt="social"></a></li>
+                        <li><a href="#"><img src="assets/img/svg/social5.svg" alt="social"></a></li>
+                    </ul>
+                    <button class="call-btn">Обратный звонок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END header -->
+
+    <!-- START main -->
+    <main class="main">
+        <!-- START wrapper -->
+        <div class="wrapper">
+            <img src="assets/img/png/wrapper-home.png" alt="" class="wrapper-bg d-none d-sm-block">
+            <img src="assets/img/png/wrapper-home-mob.png" alt="" class="wrapper-bg d-sm-none">
+            <div class="container h-100 d-flex flex-column justify-content-between position-relative z-1">
+                <div class="row g-0">
+                    <div class="col-lg-6 d-flex flex-column align-items-start">
+                        <p class="wrapper__suptitle">В нашей клинике вас ждет</p>
+                        <h1 class="wrapper__title">Качество <br> & Профессионализм</h1>
+                        <div class="d-flex flex-column flex-xl-row g-0">
+                            <div class="wrapper-item d-flex align-items-center">
+                                <img src="assets/img/png/wr1.png" alt="">
+                                <div class="">
+                                    <h6 class="wrapper-item__title">Профилактический уход</h6>
+                                    <p class="wrapper-item__text">Поможет избежать дискомфорта
+                                        и дорогостоящего лечения.</p>
+                                </div>
+                            </div>
+                            <div class="wrapper-item d-flex align-items-center">
+                                <img src="assets/img/png/wr2.png" alt="">
+                                <div class="">
+                                    <h6 class="wrapper-item__title">Комплексные услуги</h6>
+                                    <p class="wrapper-item__text">Широкий спектр услуг, включая пломбирование и ортодонтию</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="registration-btn d-flex align-items-center justify-content-center">
+                            <span>Записаться на прием</span>
+                            <img src="assets/img/svg/arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-12 d-flex flex-sm-row g-0 flex-column align-items-end align-items-sm-start justify-content-end">
+                        <button class="call-btn position-relative">
+                            <img src="assets/img/svg/call2.svg" alt="">
+                        </button>
+                        <button class="registration-btn stom">
+                            <img src="assets/img/svg/stom.svg" alt="">
+                            <img src="assets/img/svg/stom2.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END wrapper -->
+
+        
+        <!-- START services -->
+        <div class="services">
+            <div class="container">
+                <div class="row g-0 d-flex justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="banner d-flex align-items-center justify-content-between flex-column flex-sm-row g-0">
+                            <img src="assets/img/png/d1.png" alt="" class="banner-photo">
+                            <div class="banner-info text-center">
+                                <div class="banner-text position-relative">
+                                    <div class="">
+                                        <img src="assets/img/png/sb.png" alt="">
+                                        <img src="assets/img/png/sb.png" alt="">
+                                    </div>
+                                    Мне нравится, когда моя мама улыбается. Мне особенно нравится, когда я заставляю ее улыбаться
+                                </div>
+                                <h2 class="banner-title">- Адриан Тригиани</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-12 d-flex justify-content-between flex-column flex-sm-row g-0">
+                        <div class="d-flex flex-column justify-content-between py-lg-3 ">
+                            <h2 class="title__text">Услуги</h2>
+                            <a href="#" class="view-all">
+                                <span>Смотреть все</span>
+                                <img src="assets/img/svg/arrow.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper swiper-services">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="services-card position-relative">
+                                        <a href="#" class="stretched-link z-3 "></a>
+                                        <img src="assets/img/png/ser1.png" alt="" class="services-card-bg">
+                                        <h6 class="services-card_title">Рентгеновские снимки и диагностика</h6>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="services-card position-relative">
+                                        <a href="#" class="stretched-link z-3 "></a>
+                                        <img src="assets/img/png/ser2.png" alt="" class="services-card-bg">
+                                        <h6 class="services-card_title">Пломбы и реставрации</h6>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="services-card position-relative">
+                                        <a href="#" class="stretched-link z-3 "></a>
+                                        <img src="assets/img/png/ser3.png" alt="" class="services-card-bg">
+                                        <h6 class="services-card_title">Ортодонтические услуги</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End services -->
+
+        <!-- START team -->
+        <div class="team">
+            <img src="assets/img/png/lines2.png" alt="" class="lines">
+            <div class="container position-relative z-3 ">
+                <div class="row g-0">
+                    <div class="col-12 d-flex justify-content-between align-items-start flex-column flex-md-row g-0 ">
+                        <h2 class="title__text">Команда</h2>
+                        <img src="assets/img/png/team.png" alt="" class="team-photo">
+                        <div class="team-info">
+                            <h6 class="team-info__title">Михаил Шмелев</h6>
+                            <span class="team-info__subtitle">Основатель клиники</span>
+                            <div class="team-info-text position-relative ">
+                                <div class="">
+                                    <img src="assets/img/png/sb.png" alt="">
+                                    <img src="assets/img/png/sb.png" alt="">
+                                </div>
+                                <span>Мне нравится, когда моя мама улыбается. Мне особенно нравится, когда я заставляю ее улыбаться</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel position-relative z-3 ">
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            
+                        <div class="swiper swiper-team">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="team-card">
+                                        <img src="assets/img/png/team1.png" alt="" class="avatar">
+                                        <div class="team-card-social d-flex justify-content-end">
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc1.svg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc2.svg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc3.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="team-card-info d-flex justify-content-center align-items-center text-center flex-column 1">
+                                            <h6 class="name">Алена Зайцева</h6>
+                                            <p class="job">Врач ортодонт</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-card">
+                                        <img src="assets/img/png/team2.png" alt="" class="avatar">
+                                        <div class="team-card-social d-flex justify-content-end">
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc1.svg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc2.svg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc3.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="team-card-info d-flex justify-content-center align-items-center text-center flex-column 1">
+                                            <h6 class="name">Игорь Алексеев</h6>
+                                            <p class="job">Стоматолог высшей категории</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-card">
+                                        <img src="assets/img/png/team3.png" alt="" class="avatar">
+                                        <div class="team-card-social d-flex justify-content-end">
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc1.svg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc2.svg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc3.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="team-card-info d-flex justify-content-center align-items-center text-center flex-column 1">
+                                            <h6 class="name">Валентина Гришко</h6>
+                                            <p class="job">Стоматолог</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-card">
+                                        <img src="assets/img/png/team4.png" alt="" class="avatar">
+                                        <div class="team-card-social d-flex justify-content-end">
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc1.svg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc2.svg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="assets/img/svg/soc3.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="team-card-info d-flex justify-content-center align-items-center text-center flex-column 1">
+                                            <h6 class="name">Марк Егоров</h6>
+                                            <p class="job">Хирург</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="swiper-team-prev btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                        <g clip-path="url(#clip0_6_5419)">
+                                          <path d="M7.51205 19.3429C7.58766 19.4199 7.67785 19.481 7.77736 19.5228C7.87687 19.5646 7.9837 19.5861 8.09162 19.5861C8.19953 19.5861 8.30637 19.5646 8.40588 19.5228C8.50539 19.481 8.59558 19.4199 8.67118 19.3429C8.82173 19.1899 8.9061 18.9838 8.9061 18.7691C8.9061 18.5545 8.82173 18.3484 8.67118 18.1954L2.79373 12.318L22.1885 12.318C22.2953 12.3185 22.4011 12.2978 22.4998 12.2571C22.5985 12.2165 22.6882 12.1566 22.7637 12.0811C22.8391 12.0056 22.8989 11.9159 22.9394 11.8171C22.98 11.7184 23.0006 11.6125 23 11.5058C23 11.0537 22.6406 10.6826 22.1885 10.6826L2.79373 10.6826L8.67119 4.81613C8.98452 4.49183 8.98452 3.96961 8.67119 3.657C8.59558 3.57999 8.50539 3.51882 8.40588 3.47707C8.30637 3.43531 8.19954 3.41381 8.09162 3.41381C7.9837 3.41381 7.87687 3.43531 7.77736 3.47707C7.67785 3.51882 7.58766 3.57999 7.51206 3.657L0.243209 10.9258C0.166274 11.0003 0.105098 11.0894 0.0633171 11.188C0.0215366 11.2866 6.43835e-06 11.3925 6.42899e-06 11.4996C6.41963e-06 11.6066 0.0215366 11.7126 0.063317 11.8111C0.105097 11.9097 0.166274 11.9988 0.243209 12.0733L7.51205 19.3429Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_6_5419">
+                                            <rect width="23" height="23" fill="white" transform="translate(23 22.9999) rotate(-180)"/>
+                                          </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <button class="swiper-team-next btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                        <g clip-path="url(#clip0_6_5415)">
+                                          <path d="M15.4879 3.65707C15.4123 3.58006 15.3222 3.5189 15.2226 3.47714C15.1231 3.43539 15.0163 3.41388 14.9084 3.41388C14.8005 3.41388 14.6936 3.43539 14.5941 3.47714C14.4946 3.5189 14.4044 3.58006 14.3288 3.65707C14.1783 3.81008 14.0939 4.01614 14.0939 4.23079C14.0939 4.44545 14.1783 4.6515 14.3288 4.80451L20.2063 10.682H0.811476C0.704716 10.6815 0.598919 10.7022 0.500201 10.7428C0.401483 10.7835 0.311803 10.8433 0.236346 10.9188C0.160888 10.9943 0.10115 11.0841 0.0605846 11.1828C0.0200193 11.2816 -0.000568339 11.3874 1.19333e-05 11.4942C1.19333e-05 11.9463 0.359364 12.3173 0.811476 12.3173H20.2063L14.3288 18.1838C14.0155 18.5081 14.0155 19.0303 14.3288 19.3429C14.4044 19.4199 14.4946 19.4811 14.5941 19.5229C14.6936 19.5646 14.8005 19.5861 14.9084 19.5861C15.0163 19.5861 15.1231 19.5646 15.2226 19.5229C15.3222 19.4811 15.4123 19.4199 15.4879 19.3429L22.7568 12.0741C22.8337 11.9997 22.8949 11.9105 22.9367 11.8119C22.9785 11.7134 23 11.6074 23 11.5004C23 11.3933 22.9785 11.2874 22.9367 11.1888C22.8949 11.0902 22.8337 11.0011 22.7568 10.9266L15.4879 3.65707Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_6_5415">
+                                            <rect width="23" height="23" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END team -->
+
+        <!-- START banner-form -->
+        <div class="banner-form ">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="banner">
+                            <h3 class="banner__title position-relative z-2 ">Заполни заявку и <span>получи скидку <span>-10%</span></span> <br> на первое посещение</h3>
+                            <form class="form position-relative z-2 d-flex align-items-end  flex-wrap">
+                                <div class="form-box">
+                                    <label for="user-name">Имя</label>
+                                    <input type="text" id="user-name" placeholder="Например: Иван">
+                                    <small></small>
+                                </div>
+                                <div class="form-box">
+                                    <label for="user-phone">Номер телефона</label>
+                                    <input type="text" id="user-phone" placeholder="+7">
+                                    <small></small>
+                                </div>
+                                <div class="form-box">
+                                    <label for="user-email">E-mail</label>
+                                    <input type="text" id="user-email" placeholder="pochta@mail.com">
+                                    <small></small>
+                                </div>
+                                <button type="button" class="form__btn">
+                                    <span>Отправить</span>
+                                    <img src="assets/img/svg/arrow.svg" alt="">
+                                </button>
+                            </form>
+                            <img src="assets/img/png/bn.png" alt="" class="banner__img d-none d-md-block ">
+                            <img src="assets/img/png/bn-mob.png" alt="" class="banner__img d-md-block ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END banner-form -->
+
+        <!-- START review -->
+        <div class="reviews">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <h2 class="title__text">Отзывы</h2>
+                        <div class="position-relative ">
+                            <div class="swiper swiper-reviews">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="d-flex align-items-center ">
+                                                <img src="assets/img/png/review1.png" alt="" class="review__img">
+                                                <div class="">
+                                                    <h6 class="review__name">Елена</h6>
+                                                    <span class="review__date">24.01.2023</span>
+                                                </div>
+                                            </div>
+                                            <p class="review__text">Я являюсь пациентом в течение многих лет, и уровень обслуживания в этой стоматологической клинике не имеет себе равных. Персонал не только профессиональный, но и искренне заботливый. От обычных осмотров до более сложных процедур, они неизменно превосходили мои ожидания"</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="d-flex align-items-center ">
+                                                <img src="assets/img/png/review2.png" alt="" class="review__img">
+                                                <div class="">
+                                                    <h6 class="review__name">Артем</h6>
+                                                    <span class="review__date">05.05.2023</span>
+                                                </div>
+                                            </div>
+                                            <p class="review__text">Команда в этой стоматологической клинике невероятная. Они делают каждое посещение приятным. Стоматологи квалифицированные, гигиенисты скрупулезные, а персонал на стойке регистрации всегда приветлив. Я бы никому другому не доверил свою стоматологическую помощь!</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="d-flex align-items-center ">
+                                                <img src="assets/img/png/review3.png" alt="" class="review__img">
+                                                <div class="">
+                                                    <h6 class="review__name">Мария</h6>
+                                                    <span class="review__date">18.09.2023</span>
+                                                </div>
+                                            </div>
+                                            <p class="review__text">Раньше я боялась посещений стоматолога, пока не нашла эту клинику. Эффективность их обслуживания впечатляет, и они уделяют приоритетное внимание комфорту пациентов. Процедуры практически безболезненны, и им требуется время, чтобы все объяснить. Настоятельно рекомендую!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="swiper-review-prev btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                        <g clip-path="url(#clip0_6_5419)">
+                                          <path d="M7.51205 19.3429C7.58766 19.4199 7.67785 19.481 7.77736 19.5228C7.87687 19.5646 7.9837 19.5861 8.09162 19.5861C8.19953 19.5861 8.30637 19.5646 8.40588 19.5228C8.50539 19.481 8.59558 19.4199 8.67118 19.3429C8.82173 19.1899 8.9061 18.9838 8.9061 18.7691C8.9061 18.5545 8.82173 18.3484 8.67118 18.1954L2.79373 12.318L22.1885 12.318C22.2953 12.3185 22.4011 12.2978 22.4998 12.2571C22.5985 12.2165 22.6882 12.1566 22.7637 12.0811C22.8391 12.0056 22.8989 11.9159 22.9394 11.8171C22.98 11.7184 23.0006 11.6125 23 11.5058C23 11.0537 22.6406 10.6826 22.1885 10.6826L2.79373 10.6826L8.67119 4.81613C8.98452 4.49183 8.98452 3.96961 8.67119 3.657C8.59558 3.57999 8.50539 3.51882 8.40588 3.47707C8.30637 3.43531 8.19954 3.41381 8.09162 3.41381C7.9837 3.41381 7.87687 3.43531 7.77736 3.47707C7.67785 3.51882 7.58766 3.57999 7.51206 3.657L0.243209 10.9258C0.166274 11.0003 0.105098 11.0894 0.0633171 11.188C0.0215366 11.2866 6.43835e-06 11.3925 6.42899e-06 11.4996C6.41963e-06 11.6066 0.0215366 11.7126 0.063317 11.8111C0.105097 11.9097 0.166274 11.9988 0.243209 12.0733L7.51205 19.3429Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_6_5419">
+                                            <rect width="23" height="23" fill="white" transform="translate(23 22.9999) rotate(-180)"/>
+                                          </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <button class="swiper-review-next btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                        <g clip-path="url(#clip0_6_5415)">
+                                          <path d="M15.4879 3.65707C15.4123 3.58006 15.3222 3.5189 15.2226 3.47714C15.1231 3.43539 15.0163 3.41388 14.9084 3.41388C14.8005 3.41388 14.6936 3.43539 14.5941 3.47714C14.4946 3.5189 14.4044 3.58006 14.3288 3.65707C14.1783 3.81008 14.0939 4.01614 14.0939 4.23079C14.0939 4.44545 14.1783 4.6515 14.3288 4.80451L20.2063 10.682H0.811476C0.704716 10.6815 0.598919 10.7022 0.500201 10.7428C0.401483 10.7835 0.311803 10.8433 0.236346 10.9188C0.160888 10.9943 0.10115 11.0841 0.0605846 11.1828C0.0200193 11.2816 -0.000568339 11.3874 1.19333e-05 11.4942C1.19333e-05 11.9463 0.359364 12.3173 0.811476 12.3173H20.2063L14.3288 18.1838C14.0155 18.5081 14.0155 19.0303 14.3288 19.3429C14.4044 19.4199 14.4946 19.4811 14.5941 19.5229C14.6936 19.5646 14.8005 19.5861 14.9084 19.5861C15.0163 19.5861 15.1231 19.5646 15.2226 19.5229C15.3222 19.4811 15.4123 19.4199 15.4879 19.3429L22.7568 12.0741C22.8337 11.9997 22.8949 11.9105 22.9367 11.8119C22.9785 11.7134 23 11.6074 23 11.5004C23 11.3933 22.9785 11.2874 22.9367 11.1888C22.8949 11.0902 22.8337 11.0011 22.7568 10.9266L15.4879 3.65707Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_6_5415">
+                                            <rect width="23" height="23" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END review -->
+
+        <!-- START price-service -->
+        <div class="price-service">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="price-service-box position-relative d-flex align-items-center ">
+                            <img src="assets/img/png/price.png" alt="" class="price-service-bg d-none d-md-block">
+                            <img src="assets/img/png/price-mob.png" alt="" class="price-service-bg d-md-none ">
+                            <div class="position-relative z-3 ">
+                                <h3 class="price-service__title">
+                                    Узнайте стоимость <br> услуг прямо сейчас
+                                </h3>
+                                <a href="#" class="view-all">
+                                    <span>Смотреть все</span>
+                                    <img src="assets/img/svg/arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END price-service -->
+
+        <!-- START faqs -->
+        <div class="faqs">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12 d-flex align-items-center justify-content-between ">
+                        <h2 class="title__text">Часто задаваемые вопросы</h2>
+                        <p class="faqs__subtitle">Ответим на самые интересующие вас вопросы</p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-12 d-flex justify-content-between align-items-start flex-wrap ">
+                        <div class="faq-video">
+                            <video
+                                id="my-video"
+                                class="video-js"
+                                controls
+                                preload="auto"
+                                poster="assets/img/png/faq-video.png"
+                                data-setup="{}"
+                                >
+                                <source src="assets/video/video.mp4" type="video/mp4" />
+                                <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+                            </video>
+                            <div class="denta__link position-absolute d-flex align-items-center ">
+                                <a href="#" class="stretched-link "></a>
+                                <div class="text">Знакомство с клиникой</div>
+                                <div class="logo">
+                                    <img src="assets/img/png/logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqs-item">
+                            <div class="faq">
+                                <div class="faq-head d-flex align-items-center justify-content-between ">
+                                    <h3 class="faq__title">Как часто мне следует посещать стоматолога для осмотра?</h3>
+                                    <img src="assets/img/svg/close.svg" alt="" class="faq__btn">
+                                </div>
+                                <div class="faq-text">
+                                    Обычно рекомендуется проходить стоматологический осмотр каждые шесть месяцев для профилактики. Однако индивидуальные потребности могут варьироваться, и ваш стоматолог предоставит индивидуальные рекомендации.
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq-head d-flex align-items-center justify-content-between ">
+                                    <h3 class="faq__title">Какие существуют различные варианты оплаты стоматологических процедур?</h3>
+                                    <img src="assets/img/svg/close.svg" alt="" class="faq__btn">
+                                </div>
+                                <div class="faq-text">
+                                    Обычно рекомендуется проходить стоматологический осмотр каждые шесть месяцев для профилактики. Однако индивидуальные потребности могут варьироваться, и ваш стоматолог предоставит индивидуальные рекомендации.
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq-head d-flex align-items-center justify-content-between ">
+                                    <h3 class="faq__title">Существуют ли альтернативы традиционным брекетам для ортодонтического лечения?</h3>
+                                    <img src="assets/img/svg/close.svg" alt="" class="faq__btn">
+                                </div>
+                                <div class="faq-text">
+                                    Обычно рекомендуется проходить стоматологический осмотр каждые шесть месяцев для профилактики. Однако индивидуальные потребности могут варьироваться, и ваш стоматолог предоставит индивидуальные рекомендации.
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq-head d-flex align-items-center justify-content-between ">
+                                    <h3 class="faq__title">Как я могу справиться с чувствительностью зубов и доступны ли методы лечения?</h3>
+                                    <img src="assets/img/svg/close.svg" alt="" class="faq__btn">
+                                </div>
+                                <div class="faq-text">
+                                    Обычно рекомендуется проходить стоматологический осмотр каждые шесть месяцев для профилактики. Однако индивидуальные потребности могут варьироваться, и ваш стоматолог предоставит индивидуальные рекомендации.
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq-head d-flex align-items-center justify-content-between ">
+                                    <h3 class="faq__title">Предлагаете ли вы неотложные стоматологические услуги?</h3>
+                                    <img src="assets/img/svg/close.svg" alt="" class="faq__btn">
+                                </div>
+                                <div class="faq-text">
+                                    Обычно рекомендуется проходить стоматологический осмотр каждые шесть месяцев для профилактики. Однако индивидуальные потребности могут варьироваться, и ваш стоматолог предоставит индивидуальные рекомендации.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END faqs -->
+
+        <!-- START contact -->
+        <div class="contact ">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <h2 class="title__text">Контакты</h2>
+                        <div class="d-flex justify-content-between flex-column flex-lg-row ">
+                            <div class="contact-address d-flex justify-content-between flex-column flex-md-row">
+                                <div class="contact-address-info d-flex align-items-center">
+                                    <img src="assets/img/svg/loc.svg" alt="icon">
+                                    <div class="contact-address-info-text">
+                                        <p><strong>Набережные Челны</strong></p>
+                                        <span>ул. Строительная, строение 4</span>
+                                    </div>
+                                </div>
+                                <div class="contact-address-info d-flex align-items-center">
+                                    <img src="assets/img/svg/clock.svg" alt="icon">
+                                    <div class="contact-address-info-text">
+                                        <p><strong>ПН-ПТ</strong> 9:00-20:00 | <strong>СБ</strong> 10:00-16:00</p>
+                                        <span>График работы</span>
+                                    </div>
+                                </div>
+                                <div class="contact-address-info d-flex align-items-center">
+                                    <img src="assets/img/svg/call.svg" alt="icon">
+                                    <div class="contact-address-info-text">
+                                        <p>415 - 970 - 5800</p>
+                                        <span>Круглосуточная горячая линия</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <ul class="contact-social d-flex">
+                                <li><a href="#"><img src="assets/img/svg/social1.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social2.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social3.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social4.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social5.svg" alt="social"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="contact-map">
+                            <img src="assets/img/png/map.png" alt="" class="map d-none d-sm-block ">
+                            <img src="assets/img/png/map-mob.png" alt="" class="map d-sm-none ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END contact -->
+
+        <!-- START sale-form -->
+        <div class="sale-form">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="banner">
+                            <h3 class="banner__title">Подпишитесь чтобы получать  <span>уведомления об акциях</span></h3>
+                            <form class="form position-relative z-2 d-flex align-items-end justify-content-center flex-wrap">
+                                <div class="form-box">
+                                    <label for="user_name">Имя</label>
+                                    <input type="text" id="user_name" placeholder="Например: Иван">
+                                    <small></small>
+                                </div>
+                                <div class="form-box">
+                                    <label for="user_phone">Номер телефона</label>
+                                    <input type="text" id="user_phone" placeholder="+7">
+                                    <small></small>
+                                </div>
+                                <div class="form-box">
+                                    <label for="user_email">E-mail</label>
+                                    <input type="text" id="user_email" placeholder="pochta@mail.com">
+                                    <small></small>
+                                </div>
+                                <button type="button" class="form__btn">
+                                    <span>Отправить</span>
+                                    <img src="assets/img/svg/arrow.svg" alt="">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END sale-form -->
+
+    </main>
+    <!-- END main -->
+
+
+    <!-- START footer -->
+    <div class="footer ">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-12 d-flex flex-column flex-md-row ">
+                    <a href="./index.html" class="footer-logo">
+                        <img src="assets/img/svg/logo-footer.svg" alt="">
+                    </a>
+                    <div class="d-flex w-100">
+                        <div class="footer-box d-flex flex-column flex-sm-row">
+                            <ul class="footer-nav">
+                                <li><a href="./company.html">О нас</a></li>
+                                <li><a href="./services.html">Услуги</a></li>
+                                <li><a href="./preys.html">Прайс</a></li>
+                            </ul>
+                            <ul class="footer-nav">
+                                <li><a href="./sale.html">Акции</a></li>
+                                <li><a href="./faqs.html">FAQ</a></li>
+                                <li><a href="./reviews.html">Отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-box d-flex flex-column flex-sm-row">
+                            <div class="footer-info">
+                                <h6 class="footer-info__title">Режим работы</h6>
+                                <div class="d-flex align-items-start ">
+                                    <img src="assets/img/svg/clock.svg" alt="">
+                                    <span>ПН-ПТ 9:00 - 18:00</span>
+                                </div>
+                            </div>
+                            <div class="footer-info">
+                                <h6 class="footer-info__title">Контакты</h6>
+                                <div class="d-flex align-items-start ">
+                                    <img src="assets/img/svg/loc.svg" alt="">
+                                    <span>г. Москва, метро Кропоткинская
+                                        Гагаринский переулок 5/3</span>
+                                </div>
+                                <div class="d-flex align-items-start ">
+                                    <img src="assets/img/svg/call.svg" alt="">
+                                    <span>414 - 970 - 5800</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-sub">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <p class="footer-sub__text">2024 Dental Hub Все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END footer -->
+
+
+
+
+
+    <!-- START pop-up -->
+    <div class="popUp popUp-registration d-none">
+        <div class="popUp-content">
+            <button class="popUp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="black"/>
+                </svg>
+            </button>
+            <form class="form">
+                <div class="form-title">
+                    <span>Онлайн запись</span>
+                    <p>415 - 970 - 5800</p>
+                </div>
+                <div class="form-checks">
+                    <h6 class="form-checks__title">Выберите с чего вы хотите начать?</h6>
+                    <div class="d-flex align-items-center">
+                        <div class="check">
+                            <input type="radio" id="doctor" name="check" checked>
+                            <label for="doctor">Запись к врачу</label>
+                        </div>  
+                        <div class="check">
+                            <input type="radio" id="service" name="check">
+                            <label for="service">Запись на услугу</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_select">
+                    <div class="select">
+                        <span class="select-active doctor_active">Выберите врача</span>
+                        <small></small>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <g clip-path="url(#clip0_27_7435)">
+                              <path d="M8.50746 12.9814L15.8039 4.9748C16.0654 4.71206 16.0654 4.28596 15.8039 4.02322C15.5426 3.76049 15.1184 3.76049 14.857 4.02322L7.99999 11.5471L1.14296 4.02389C0.881561 3.76115 0.457437 3.76115 0.196054 4.02389C-0.0653286 4.28663 -0.0653286 4.71273 0.196054 4.97545L7.49254 12.9821C7.63188 13.1221 7.81662 13.1822 7.99932 13.1728C8.18271 13.1815 8.36743 13.1215 8.50746 12.9814Z" fill="black"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_27_7435">
+                                <rect width="16" height="16" fill="white" transform="translate(16 0.5) rotate(90)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <ul class="options">
+                        <li>Адриан Тригиани</li>
+                        <li>Михаил Шмелев</li>
+                        <li>Алена Зайцева</li>
+                        <li>Игорь Алексеев</li>
+                        <li>Валентина Гришко</li>
+                        <li>Марк Егоров</li>
+                    </ul>
+                </div>
+                <div class="form_select">
+                    <div class="select">
+                        <span class="select-active service_active">Выберите услугу</span>
+                        <small></small>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <g clip-path="url(#clip0_27_7435)">
+                              <path d="M8.50746 12.9814L15.8039 4.9748C16.0654 4.71206 16.0654 4.28596 15.8039 4.02322C15.5426 3.76049 15.1184 3.76049 14.857 4.02322L7.99999 11.5471L1.14296 4.02389C0.881561 3.76115 0.457437 3.76115 0.196054 4.02389C-0.0653286 4.28663 -0.0653286 4.71273 0.196054 4.97545L7.49254 12.9821C7.63188 13.1221 7.81662 13.1822 7.99932 13.1728C8.18271 13.1815 8.36743 13.1215 8.50746 12.9814Z" fill="black"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_27_7435">
+                                <rect width="16" height="16" fill="white" transform="translate(16 0.5) rotate(90)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <ul class="options">
+                        <li>Рентгеновские снимки и диагностика</li>
+                        <li>Пломбы и реставрации</li>
+                        <li>Ортодонтические услуги</li>
+                    </ul>
+                </div>
+                <div class="form-box position-relative">
+                    <input type="text" class="form-date" placeholder="Выбрать дату" name="date" id="date" data-select="datepicker">
+                    <small></small>
+                    <img src="assets/img/svg/calendar.svg" alt="">
+                </div>
+                <div class="form_select">
+                    <div class="select">
+                        <span class="select-active time_active">Выбрать время</span>
+                        <small></small>
+                        <img src="assets/img/svg/clock2.svg" alt="">
+                    </div>
+                    <ul class="options">
+                        <li>9:00</li>
+                        <li>9:30</li>
+                        <li>10:00</li>
+                        <li>10:30</li>
+                        <li>11:00</li>
+                        <li>11:30</li>
+                        <li>12:00</li>
+                        <li>13:00</li>
+                        <li>14:00</li>
+                        <li>15:00</li>
+                        <li>16:00</li>
+                    </ul>
+                </div>
+                <button type="button" class="form-btn d-flex align-items-center justify-content-center">
+                    <span>Записаться на прием</span>
+                    <img src="assets/img/svg/arrow.svg" alt="">
+                </button>
+            </form>
+        </div>
+
+        <div class="popUp-content d-none">
+            <button class="popUp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="black"/>
+                </svg>
+            </button>
+            
+            <h4 class="form__title text-center">Спасибо! Заявка отправлена</h4>
+            <h4 class="form__subtitle text-center">В течении 15 минут с вами <br> свяжется менеджер</h4>
+        </div>
+    </div>
+
+    <div class="popUp popUp-call d-none">
+        <div class="popUp-content">
+            <button class="popUp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="black"/>
+                </svg>
+            </button>
+            <form class="form">
+                <h4 class="form__title text-center">Закажите обратный звонок</h4>
+                <div class="form-box position-relative">
+                    <label for="name">Имя</label>
+                    <input type="text" class="form-name" placeholder="Например: Иван" id="name">
+                    <small></small>
+                </div>
+                <div class="form-box position-relative">
+                    <label for="phone">Номер телефона</label>
+                    <input type="text" class="form-phone phone" placeholder="+7" id="phone">
+                    <small></small>
+                </div>
+                <button type="button" class="form-btn d-flex align-items-center justify-content-center">
+                    <span>Записаться на прием</span>
+                    <img src="assets/img/svg/arrow.svg" alt="">
+                </button>
+            </form>
+        </div>
+
+        <div class="popUp-content d-none">
+            <button class="popUp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="black"/>
+                </svg>
+            </button>
+            
+            <h4 class="form__title text-center">Спасибо! Заявка отправлена</h4>
+            <h4 class="form__subtitle text-center">В течении 15 минут с вами <br> свяжется менеджер</h4>
+        </div>
+    </div>
+
+    <div class="popUp popUp-thanks d-none">
+        <div class="popUp-content">
+            <button class="popUp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="black"/>
+                </svg>
+            </button>
+            
+            <h4 class="form__title text-center">Спасибо! Заявка отправлена</h4>
+            <h4 class="form__subtitle text-center">В течении 15 минут с вами <br> свяжется менеджер</h4>
+        </div>
+    </div>
+    <!-- END pop-up -->
+    
+
+    
+    <script src="assets/js/plugin/jquery.js"></script>
+    <script src="assets/js/plugin/jquery.datepicker2.js"></script>
+    <script src="assets/js/plugin/mask.js"></script>
+    <script src="assets/js/plugin/swiper.js"></script>
+    <script src="assets/js/plugin/video.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/banner-form.js"></script>
+    <script src="assets/js/sale-form.js"></script>
+    <script src="assets/js/review.js"></script>
+    <script src="assets/js/faq.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

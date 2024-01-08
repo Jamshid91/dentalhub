@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/plugin/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Прайс</title>
+</head>
+<body>
+    <!-- START header -->
+    <header class="header position-relative">
+        <div class="header-top d-none d-lg-block">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <a href="./index.html" class="header-logo">
+                            <img src="assets/img/svg/logo.svg" alt="logo" class="logo">
+                        </a>
+                        <div class="d-flex align-items-center">
+                            <div class="header-top-info d-flex align-items-center">
+                                <img src="assets/img/svg/loc.svg" alt="icon">
+                                <div class="header-top-info-text">
+                                    <p><strong>Набережные Челны</strong></p>
+                                    <span>ул. Строительная, строение 4</span>
+                                </div>
+                            </div>
+                            <div class="header-top-info d-flex align-items-center">
+                                <img src="assets/img/svg/clock.svg" alt="icon">
+                                <div class="header-top-info-text">
+                                    <p><strong>ПН-ПТ</strong> 9:00-20:00 | <strong>СБ</strong> 10:00-16:00</p>
+                                    <span>График работы</span>
+                                </div>
+                            </div>
+                            <div class="header-top-info d-flex align-items-center">
+                                <img src="assets/img/svg/call.svg" alt="icon">
+                                <div class="header-top-info-text">
+                                    <p>415 - 970 - 5800</p>
+                                    <span>Круглосуточная горячая линия</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="call-btn">Обратный звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom position-absolute w-100 start-0 d-none d-lg-block">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="header-nav d-flex align-items-center justify-content-between">
+                            <ul class="nav-item d-flex">
+                                <li><a href="./company.html">О нас</a></li>
+                                <li><a href="./services.html">Услуги</a></li>
+                                <li><a href="./preys.html">Прайс</a></li>
+                                <li><a href="./sale.html">Акции</a></li>
+                                <li><a href="./faqs.html">FAQ</a></li>
+                                <li><a href="./reviews.html">Отзывы</a></li>
+                                <li><a href="./contact.html">Контакты</a></li>
+                            </ul>
+                            <ul class="nav-social d-flex">
+                                <li><a href="#"><img src="assets/img/svg/social1.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social2.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social3.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social4.svg" alt="social"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/social5.svg" alt="social"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mob d-lg-none">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <a href="./index.html" class="header-logo">
+                            <img src="assets/img/svg/logo.svg" alt="logo" class="logo">
+                        </a>
+            
+                        <div class="menu-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20" fill="none">
+                                <path d="M24.9167 11.0668H1.08333C0.485333 11.0668 0 10.5815 0 9.98346C0 9.38546 0.485333 8.90013 1.08333 8.90013H24.9167C25.5147 8.90013 26 9.38546 26 9.98346C26 10.5815 25.5147 11.0668 24.9167 11.0668ZM24.9167 2.76115H1.08333C0.485333 2.76115 0 2.27582 0 1.67782C0 1.07982 0.485333 0.594482 1.08333 0.594482H24.9167C25.5147 0.594482 26 1.07982 26 1.67782C26 2.27582 25.5147 2.76115 24.9167 2.76115ZM24.9167 19.3722H1.08333C0.485333 19.3722 0 18.8868 0 18.2888C0 17.6908 0.485333 17.2055 1.08333 17.2055H24.9167C25.5147 17.2055 26 17.6908 26 18.2888C26 18.8868 25.5147 19.3722 24.9167 19.3722Z" fill="white"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 20 20" fill="none">
+                                <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu d-none">
+        <div class="menu-content">
+            <ul class="menu-nav">
+                <li><a href="./company.html">О нас</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./preys.html">Прайс</a></li>
+                <li><a href="./sale.html">Акции</a></li>
+                <li><a href="./faqs.html">FAQ</a></li>
+                <li><a href="./reviews.html">Отзывы</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+            </ul>
+            <div class="menu-box">
+                <div class="menu-box-info d-flex align-items-start">
+                    <img src="assets/img/svg/clock.svg" alt="icon">
+                    <div class="header-top-info-text">
+                        <p><strong>ПН-ПТ</strong> 9:00-20:00 | <strong>СБ</strong> 10:00-16:00</p>
+                        <span>График работы</span>
+                    </div>
+                </div>
+                <div class="menu-box-info d-flex align-items-start">
+                    <img src="assets/img/svg/loc.svg" alt="icon">
+                    <div class="header-top-info-text">
+                        <p><strong>Набережные Челны</strong></p>
+                        <span>ул. Строительная, строение 4</span>
+                    </div>
+                </div>
+                <div class="menu-box-info d-flex align-items-start">
+                    <img src="assets/img/svg/call.svg" alt="icon">
+                    <div class="header-top-info-text">
+                        <p><strong>415 - 970 - 5800</strong></p>
+                        <span>Круглосуточная горячая линия</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <ul class="menu-social d-flex">
+                        <li><a href="#"><img src="assets/img/svg/social1.svg" alt="social"></a></li>
+                        <li><a href="#"><img src="assets/img/svg/social2.svg" alt="social"></a></li>
+                        <li><a href="#"><img src="assets/img/svg/social3.svg" alt="social"></a></li>
+                        <li><a href="#"><img src="assets/img/svg/social4.svg" alt="social"></a></li>
+                        <li><a href="#"><img src="assets/img/svg/social5.svg" alt="social"></a></li>
+                    </ul>
+                    <button class="call-btn">Обратный звонок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END header -->
+
+    <!-- START main -->
+    <main class="main">
+        <div class="prays">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="prays__title">Прайс лист на услуги</h1>
+                        <div class="prays-filter d-flex flex-wrap">
+                            <label for="f1" class="filter-btn" data-radio="filter_1">
+                                <input type="radio" id="f1" name="filter" value="vv" checked>
+                                <button>Ортодонт</button>
+                            </label>
+                            <label for="f2" class="filter-btn" data-radio="filter_2">
+                                <input type="radio" id="f2" name="filter">
+                                <button>Импланты</button>
+                            </label>
+                            <label for="f3" class="filter-btn" data-radio="filter_3">
+                                <input type="radio" id="f3" name="filter">
+                                <button>Хирургия</button>
+                            </label>
+                            <label for="f4" class="filter-btn" data-radio="filter_4">
+                                <input type="radio" id="f4" name="filter">
+                                <button>Косметологическая стоматология</button>
+                            </label>
+                            <label for="f5" class="filter-btn" data-radio="filter_5">
+                                <input type="radio" id="f5" name="filter">
+                                <button>Детский стоматолог</button>
+                            </label>
+                        </div>
+
+                        <div class="">
+                            <!-- FILTER -->
+                            <div class="prays-box filter_1">
+                                <h6 class="prays-box__title">Ортодонт</h6>
+                                <ul class="prays-item d-flex flex-wrap justify-content-between">
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                </ul>
+
+                                <a href="./assets/img/logo.ico" download="download" class="prays__download d-flex align-items-center">
+                                    <span>Скачать PDF</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                        <path d="M23.8337 17.3333C23.8337 17.046 23.7195 16.7705 23.5164 16.5673C23.3132 16.3641 23.0376 16.25 22.7503 16.25C22.463 16.25 22.1875 16.3641 21.9843 16.5673C21.7811 16.7705 21.667 17.046 21.667 17.3333V20.5833C21.667 20.8707 21.5529 21.1462 21.3497 21.3494C21.1465 21.5525 20.871 21.6667 20.5837 21.6667H5.41699C5.12967 21.6667 4.85412 21.5525 4.65096 21.3494C4.4478 21.1462 4.33366 20.8707 4.33366 20.5833V17.3333C4.33366 17.046 4.21952 16.7705 4.01636 16.5673C3.81319 16.3641 3.53764 16.25 3.25033 16.25C2.96301 16.25 2.68746 16.3641 2.48429 16.5673C2.28113 16.7705 2.16699 17.046 2.16699 17.3333V20.5833C2.16699 21.4453 2.5094 22.2719 3.1189 22.8814C3.72839 23.4909 4.55504 23.8333 5.41699 23.8333H20.5837C21.4456 23.8333 22.2723 23.4909 22.8818 22.8814C23.4912 22.2719 23.8337 21.4453 23.8337 20.5833V17.3333Z" fill="white"/>
+                                        <path d="M11.9169 3.25002V15.8167L10.5205 14.4084C10.3151 14.2259 10.048 14.1283 9.77328 14.1354C9.4986 14.1424 9.23687 14.2536 9.04107 14.4464C8.84527 14.6391 8.73004 14.8991 8.7187 15.1736C8.70736 15.4482 8.80076 15.7168 8.97999 15.925L12.23 19.2075C12.3307 19.3094 12.4507 19.3903 12.5829 19.4454C12.7151 19.5006 12.857 19.5291 13.0002 19.5291C13.1435 19.5291 13.2854 19.5006 13.4176 19.4454C13.5498 19.3903 13.6697 19.3094 13.7705 19.2075L17.0205 15.925C17.1997 15.7168 17.2931 15.4482 17.2818 15.1736C17.2704 14.8991 17.1552 14.6391 16.9594 14.4464C16.7636 14.2536 16.5019 14.1424 16.2272 14.1354C15.9525 14.1283 15.6854 14.2259 15.48 14.4084L14.0836 15.8167V3.25002C14.0836 2.9627 13.9694 2.68715 13.7663 2.48399C13.5631 2.28082 13.2876 2.16669 13.0002 2.16669C12.7129 2.16669 12.4374 2.28082 12.2342 2.48399C12.031 2.68715 11.9169 2.9627 11.9169 3.25002Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <!-- FILTER -->
+                            <div class="prays-box filter_2">
+                                <h6 class="prays-box__title">Импланты</h6>
+                                <ul class="prays-item d-flex flex-wrap justify-content-between">
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                </ul>
+
+                                <a href="./assets/img/logo.ico" download="download" class="prays__download d-flex align-items-center">
+                                    <span>Скачать PDF</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                        <path d="M23.8337 17.3333C23.8337 17.046 23.7195 16.7705 23.5164 16.5673C23.3132 16.3641 23.0376 16.25 22.7503 16.25C22.463 16.25 22.1875 16.3641 21.9843 16.5673C21.7811 16.7705 21.667 17.046 21.667 17.3333V20.5833C21.667 20.8707 21.5529 21.1462 21.3497 21.3494C21.1465 21.5525 20.871 21.6667 20.5837 21.6667H5.41699C5.12967 21.6667 4.85412 21.5525 4.65096 21.3494C4.4478 21.1462 4.33366 20.8707 4.33366 20.5833V17.3333C4.33366 17.046 4.21952 16.7705 4.01636 16.5673C3.81319 16.3641 3.53764 16.25 3.25033 16.25C2.96301 16.25 2.68746 16.3641 2.48429 16.5673C2.28113 16.7705 2.16699 17.046 2.16699 17.3333V20.5833C2.16699 21.4453 2.5094 22.2719 3.1189 22.8814C3.72839 23.4909 4.55504 23.8333 5.41699 23.8333H20.5837C21.4456 23.8333 22.2723 23.4909 22.8818 22.8814C23.4912 22.2719 23.8337 21.4453 23.8337 20.5833V17.3333Z" fill="white"/>
+                                        <path d="M11.9169 3.25002V15.8167L10.5205 14.4084C10.3151 14.2259 10.048 14.1283 9.77328 14.1354C9.4986 14.1424 9.23687 14.2536 9.04107 14.4464C8.84527 14.6391 8.73004 14.8991 8.7187 15.1736C8.70736 15.4482 8.80076 15.7168 8.97999 15.925L12.23 19.2075C12.3307 19.3094 12.4507 19.3903 12.5829 19.4454C12.7151 19.5006 12.857 19.5291 13.0002 19.5291C13.1435 19.5291 13.2854 19.5006 13.4176 19.4454C13.5498 19.3903 13.6697 19.3094 13.7705 19.2075L17.0205 15.925C17.1997 15.7168 17.2931 15.4482 17.2818 15.1736C17.2704 14.8991 17.1552 14.6391 16.9594 14.4464C16.7636 14.2536 16.5019 14.1424 16.2272 14.1354C15.9525 14.1283 15.6854 14.2259 15.48 14.4084L14.0836 15.8167V3.25002C14.0836 2.9627 13.9694 2.68715 13.7663 2.48399C13.5631 2.28082 13.2876 2.16669 13.0002 2.16669C12.7129 2.16669 12.4374 2.28082 12.2342 2.48399C12.031 2.68715 11.9169 2.9627 11.9169 3.25002Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <!-- FILTER -->
+                            <div class="prays-box filter_3">
+                                <h6 class="prays-box__title">Хирургия</h6>
+                                <ul class="prays-item d-flex flex-wrap justify-content-between">
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                </ul>
+
+                                <a href="./assets/img/logo.ico" download="download" class="prays__download d-flex align-items-center">
+                                    <span>Скачать PDF</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                        <path d="M23.8337 17.3333C23.8337 17.046 23.7195 16.7705 23.5164 16.5673C23.3132 16.3641 23.0376 16.25 22.7503 16.25C22.463 16.25 22.1875 16.3641 21.9843 16.5673C21.7811 16.7705 21.667 17.046 21.667 17.3333V20.5833C21.667 20.8707 21.5529 21.1462 21.3497 21.3494C21.1465 21.5525 20.871 21.6667 20.5837 21.6667H5.41699C5.12967 21.6667 4.85412 21.5525 4.65096 21.3494C4.4478 21.1462 4.33366 20.8707 4.33366 20.5833V17.3333C4.33366 17.046 4.21952 16.7705 4.01636 16.5673C3.81319 16.3641 3.53764 16.25 3.25033 16.25C2.96301 16.25 2.68746 16.3641 2.48429 16.5673C2.28113 16.7705 2.16699 17.046 2.16699 17.3333V20.5833C2.16699 21.4453 2.5094 22.2719 3.1189 22.8814C3.72839 23.4909 4.55504 23.8333 5.41699 23.8333H20.5837C21.4456 23.8333 22.2723 23.4909 22.8818 22.8814C23.4912 22.2719 23.8337 21.4453 23.8337 20.5833V17.3333Z" fill="white"/>
+                                        <path d="M11.9169 3.25002V15.8167L10.5205 14.4084C10.3151 14.2259 10.048 14.1283 9.77328 14.1354C9.4986 14.1424 9.23687 14.2536 9.04107 14.4464C8.84527 14.6391 8.73004 14.8991 8.7187 15.1736C8.70736 15.4482 8.80076 15.7168 8.97999 15.925L12.23 19.2075C12.3307 19.3094 12.4507 19.3903 12.5829 19.4454C12.7151 19.5006 12.857 19.5291 13.0002 19.5291C13.1435 19.5291 13.2854 19.5006 13.4176 19.4454C13.5498 19.3903 13.6697 19.3094 13.7705 19.2075L17.0205 15.925C17.1997 15.7168 17.2931 15.4482 17.2818 15.1736C17.2704 14.8991 17.1552 14.6391 16.9594 14.4464C16.7636 14.2536 16.5019 14.1424 16.2272 14.1354C15.9525 14.1283 15.6854 14.2259 15.48 14.4084L14.0836 15.8167V3.25002C14.0836 2.9627 13.9694 2.68715 13.7663 2.48399C13.5631 2.28082 13.2876 2.16669 13.0002 2.16669C12.7129 2.16669 12.4374 2.28082 12.2342 2.48399C12.031 2.68715 11.9169 2.9627 11.9169 3.25002Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <!-- FILTER -->
+                            <div class="prays-box filter_4">
+                                <h6 class="prays-box__title">Косметологическая стоматология</h6>
+                                <ul class="prays-item d-flex flex-wrap justify-content-between">
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                </ul>
+
+                                <a href="./assets/img/logo.ico" download="download" class="prays__download d-flex align-items-center">
+                                    <span>Скачать PDF</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                        <path d="M23.8337 17.3333C23.8337 17.046 23.7195 16.7705 23.5164 16.5673C23.3132 16.3641 23.0376 16.25 22.7503 16.25C22.463 16.25 22.1875 16.3641 21.9843 16.5673C21.7811 16.7705 21.667 17.046 21.667 17.3333V20.5833C21.667 20.8707 21.5529 21.1462 21.3497 21.3494C21.1465 21.5525 20.871 21.6667 20.5837 21.6667H5.41699C5.12967 21.6667 4.85412 21.5525 4.65096 21.3494C4.4478 21.1462 4.33366 20.8707 4.33366 20.5833V17.3333C4.33366 17.046 4.21952 16.7705 4.01636 16.5673C3.81319 16.3641 3.53764 16.25 3.25033 16.25C2.96301 16.25 2.68746 16.3641 2.48429 16.5673C2.28113 16.7705 2.16699 17.046 2.16699 17.3333V20.5833C2.16699 21.4453 2.5094 22.2719 3.1189 22.8814C3.72839 23.4909 4.55504 23.8333 5.41699 23.8333H20.5837C21.4456 23.8333 22.2723 23.4909 22.8818 22.8814C23.4912 22.2719 23.8337 21.4453 23.8337 20.5833V17.3333Z" fill="white"/>
+                                        <path d="M11.9169 3.25002V15.8167L10.5205 14.4084C10.3151 14.2259 10.048 14.1283 9.77328 14.1354C9.4986 14.1424 9.23687 14.2536 9.04107 14.4464C8.84527 14.6391 8.73004 14.8991 8.7187 15.1736C8.70736 15.4482 8.80076 15.7168 8.97999 15.925L12.23 19.2075C12.3307 19.3094 12.4507 19.3903 12.5829 19.4454C12.7151 19.5006 12.857 19.5291 13.0002 19.5291C13.1435 19.5291 13.2854 19.5006 13.4176 19.4454C13.5498 19.3903 13.6697 19.3094 13.7705 19.2075L17.0205 15.925C17.1997 15.7168 17.2931 15.4482 17.2818 15.1736C17.2704 14.8991 17.1552 14.6391 16.9594 14.4464C16.7636 14.2536 16.5019 14.1424 16.2272 14.1354C15.9525 14.1283 15.6854 14.2259 15.48 14.4084L14.0836 15.8167V3.25002C14.0836 2.9627 13.9694 2.68715 13.7663 2.48399C13.5631 2.28082 13.2876 2.16669 13.0002 2.16669C12.7129 2.16669 12.4374 2.28082 12.2342 2.48399C12.031 2.68715 11.9169 2.9627 11.9169 3.25002Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <!-- FILTER -->
+                            <div class="prays-box filter_5">
+                                <h6 class="prays-box__title">Детский стоматолог</h6>
+                                <ul class="prays-item d-flex flex-wrap justify-content-between">
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                    <li>
+                                        <p>Флексилайнеры Quick (от 1 до 5 флексов), 2 зубных ряда</p>
+                                        <strong>94 780 ₽</strong>
+                                    </li>
+                                </ul>
+
+                                <a href="./assets/img/logo.ico" download="download" class="prays__download d-flex align-items-center">
+                                    <span>Скачать PDF</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                        <path d="M23.8337 17.3333C23.8337 17.046 23.7195 16.7705 23.5164 16.5673C23.3132 16.3641 23.0376 16.25 22.7503 16.25C22.463 16.25 22.1875 16.3641 21.9843 16.5673C21.7811 16.7705 21.667 17.046 21.667 17.3333V20.5833C21.667 20.8707 21.5529 21.1462 21.3497 21.3494C21.1465 21.5525 20.871 21.6667 20.5837 21.6667H5.41699C5.12967 21.6667 4.85412 21.5525 4.65096 21.3494C4.4478 21.1462 4.33366 20.8707 4.33366 20.5833V17.3333C4.33366 17.046 4.21952 16.7705 4.01636 16.5673C3.81319 16.3641 3.53764 16.25 3.25033 16.25C2.96301 16.25 2.68746 16.3641 2.48429 16.5673C2.28113 16.7705 2.16699 17.046 2.16699 17.3333V20.5833C2.16699 21.4453 2.5094 22.2719 3.1189 22.8814C3.72839 23.4909 4.55504 23.8333 5.41699 23.8333H20.5837C21.4456 23.8333 22.2723 23.4909 22.8818 22.8814C23.4912 22.2719 23.8337 21.4453 23.8337 20.5833V17.3333Z" fill="white"/>
+                                        <path d="M11.9169 3.25002V15.8167L10.5205 14.4084C10.3151 14.2259 10.048 14.1283 9.77328 14.1354C9.4986 14.1424 9.23687 14.2536 9.04107 14.4464C8.84527 14.6391 8.73004 14.8991 8.7187 15.1736C8.70736 15.4482 8.80076 15.7168 8.97999 15.925L12.23 19.2075C12.3307 19.3094 12.4507 19.3903 12.5829 19.4454C12.7151 19.5006 12.857 19.5291 13.0002 19.5291C13.1435 19.5291 13.2854 19.5006 13.4176 19.4454C13.5498 19.3903 13.6697 19.3094 13.7705 19.2075L17.0205 15.925C17.1997 15.7168 17.2931 15.4482 17.2818 15.1736C17.2704 14.8991 17.1552 14.6391 16.9594 14.4464C16.7636 14.2536 16.5019 14.1424 16.2272 14.1354C15.9525 14.1283 15.6854 14.2259 15.48 14.4084L14.0836 15.8167V3.25002C14.0836 2.9627 13.9694 2.68715 13.7663 2.48399C13.5631 2.28082 13.2876 2.16669 13.0002 2.16669C12.7129 2.16669 12.4374 2.28082 12.2342 2.48399C12.031 2.68715 11.9169 2.9627 11.9169 3.25002Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- END main -->
+
+
+    <!-- START footer -->
+    <div class="footer ">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-12 d-flex flex-column flex-md-row ">
+                    <a href="./index.html" class="footer-logo">
+                        <img src="assets/img/svg/logo-footer.svg" alt="">
+                    </a>
+                    <div class="d-flex w-100">
+                        <div class="footer-box d-flex flex-column flex-sm-row">
+                            <ul class="footer-nav">
+                                <li><a href="./company.html">О нас</a></li>
+                                <li><a href="./services.html">Услуги</a></li>
+                                <li><a href="./preys.html">Прайс</a></li>
+                            </ul>
+                            <ul class="footer-nav">
+                                <li><a href="./sale.html">Акции</a></li>
+                                <li><a href="./faqs.html">FAQ</a></li>
+                                <li><a href="./reviews.html">Отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-box d-flex flex-column flex-sm-row">
+                            <div class="footer-info">
+                                <h6 class="footer-info__title">Режим работы</h6>
+                                <div class="d-flex align-items-start ">
+                                    <img src="assets/img/svg/clock.svg" alt="">
+                                    <span>ПН-ПТ 9:00 - 18:00</span>
+                                </div>
+                            </div>
+                            <div class="footer-info">
+                                <h6 class="footer-info__title">Контакты</h6>
+                                <div class="d-flex align-items-start ">
+                                    <img src="assets/img/svg/loc.svg" alt="">
+                                    <span>г. Москва, метро Кропоткинская
+                                        Гагаринский переулок 5/3</span>
+                                </div>
+                                <div class="d-flex align-items-start ">
+                                    <img src="assets/img/svg/call.svg" alt="">
+                                    <span>414 - 970 - 5800</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-sub">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <p class="footer-sub__text">2024 Dental Hub Все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END footer -->
+
+
+
+
+
+    <!-- START pop-up -->
+    <div class="popUp popUp-registration d-none">
+        <div class="popUp-content">
+            <button class="popUp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="black"/>
+                </svg>
+            </button>
+            <form class="form">
+                <div class="form-title">
+                    <span>Онлайн запись</span>
+                    <p>415 - 970 - 5800</p>
+                </div>
+                <div class="form-checks">
+                    <h6 class="form-checks__title">Выберите с чего вы хотите начать?</h6>
+                    <div class="d-flex align-items-center">
+                        <div class="check">
+                            <input type="radio" id="doctor" name="check" checked>
+                            <label for="doctor">Запись к врачу</label>
+                        </div>  
+                        <div class="check">
+                            <input type="radio" id="service" name="check">
+                            <label for="service">Запись на услугу</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_select">
+                    <div class="select">
+                        <span class="select-active doctor_active">Выберите врача</span>
+                        <small></small>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <g clip-path="url(#clip0_27_7435)">
+                              <path d="M8.50746 12.9814L15.8039 4.9748C16.0654 4.71206 16.0654 4.28596 15.8039 4.02322C15.5426 3.76049 15.1184 3.76049 14.857 4.02322L7.99999 11.5471L1.14296 4.02389C0.881561 3.76115 0.457437 3.76115 0.196054 4.02389C-0.0653286 4.28663 -0.0653286 4.71273 0.196054 4.97545L7.49254 12.9821C7.63188 13.1221 7.81662 13.1822 7.99932 13.1728C8.18271 13.1815 8.36743 13.1215 8.50746 12.9814Z" fill="black"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_27_7435">
+                                <rect width="16" height="16" fill="white" transform="translate(16 0.5) rotate(90)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <ul class="options">
+                        <li>Адриан Тригиани</li>
+                        <li>Михаил Шмелев</li>
+                        <li>Алена Зайцева</li>
+                        <li>Игорь Алексеев</li>
+                        <li>Валентина Гришко</li>
+                        <li>Марк Егоров</li>
+                    </ul>
+                </div>
+                <div class="form_select">
+                    <div class="select">
+                        <span class="select-active service_active">Выберите услугу</span>
+                        <small></small>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <g clip-path="url(#clip0_27_7435)">
+                              <path d="M8.50746 12.9814L15.8039 4.9748C16.0654 4.71206 16.0654 4.28596 15.8039 4.02322C15.5426 3.76049 15.1184 3.76049 14.857 4.02322L7.99999 11.5471L1.14296 4.02389C0.881561 3.76115 0.457437 3.76115 0.196054 4.02389C-0.0653286 4.28663 -0.0653286 4.71273 0.196054 4.97545L7.49254 12.9821C7.63188 13.1221 7.81662 13.1822 7.99932 13.1728C8.18271 13.1815 8.36743 13.1215 8.50746 12.9814Z" fill="black"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_27_7435">
+                                <rect width="16" height="16" fill="white" transform="translate(16 0.5) rotate(90)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <ul class="options">
+                        <li>Рентгеновские снимки и диагностика</li>
+                        <li>Пломбы и реставрации</li>
+                        <li>Ортодонтические услуги</li>
+                    </ul>
+                </div>
+                <div class="form-box position-relative">
+                    <input type="text" class="form-date" placeholder="Выбрать дату" name="date" id="date" data-select="datepicker">
+                    <small></small>
+                    <img src="assets/img/svg/calendar.svg" alt="">
+                </div>
+                <div class="form_select">
+                    <div class="select">
+                        <span class="select-active time_active">Выбрать время</span>
+                        <small></small>
+                        <img src="assets/img/svg/clock2.svg" alt="">
+                    </div>
+                    <ul class="options">
+                        <li>9:00</li>
+                        <li>9:30</li>
+                        <li>10:00</li>
+                        <li>10:30</li>
+                        <li>11:00</li>
+                        <li>11:30</li>
+                        <li>12:00</li>
+                        <li>13:00</li>
+                        <li>14:00</li>
+                        <li>15:00</li>
+                        <li>16:00</li>
+                    </ul>
+                </div>
+                <button type="button" class="form-btn d-flex align-items-center justify-content-center">
+                    <span>Записаться на прием</span>
+                    <img src="assets/img/svg/arrow.svg" alt="">
+                </button>
+            </form>
+        </div>
+
+        <div class="popUp-content d-none">
+            <button class="popUp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="black"/>
+                </svg>
+            </button>
+            
+            <h4 class="form__title text-center">Спасибо! Заявка отправлена</h4>
+            <h4 class="form__subtitle text-center">В течении 15 минут с вами <br> свяжется менеджер</h4>
+        </div>
+    </div>
+
+    <div class="popUp popUp-call d-none">
+        <div class="popUp-content">
+            <button class="popUp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="black"/>
+                </svg>
+            </button>
+            <form class="form">
+                <h4 class="form__title text-center">Закажите обратный звонок</h4>
+                <div class="form-box position-relative">
+                    <label for="name">Имя</label>
+                    <input type="text" class="form-name" placeholder="Например: Иван" id="name">
+                    <small></small>
+                </div>
+                <div class="form-box position-relative">
+                    <label for="phone">Номер телефона</label>
+                    <input type="text" class="form-phone phone" placeholder="+7" id="phone">
+                    <small></small>
+                </div>
+                <button type="button" class="form-btn d-flex align-items-center justify-content-center">
+                    <span>Записаться на прием</span>
+                    <img src="assets/img/svg/arrow.svg" alt="">
+                </button>
+            </form>
+        </div>
+
+        <div class="popUp-content d-none">
+            <button class="popUp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="black"/>
+                </svg>
+            </button>
+            
+            <h4 class="form__title text-center">Спасибо! Заявка отправлена</h4>
+            <h4 class="form__subtitle text-center">В течении 15 минут с вами <br> свяжется менеджер</h4>
+        </div>
+    </div>
+
+    <div class="popUp popUp-thanks d-none">
+        <div class="popUp-content">
+            <button class="popUp-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.5524 10L18.0727 2.4797C18.11 2.44367 18.1397 2.40057 18.1602 2.35291C18.1807 2.30525 18.1915 2.25399 18.1919 2.20212C18.1924 2.15026 18.1825 2.09882 18.1628 2.05081C18.1432 2.00281 18.1142 1.95919 18.0775 1.92252C18.0408 1.88584 17.9972 1.85683 17.9492 1.83719C17.9012 1.81755 17.8498 1.80767 17.7979 1.80812C17.746 1.80857 17.6948 1.81935 17.6471 1.83982C17.5995 1.86029 17.5564 1.89005 17.5203 1.92736L10 9.44767L2.4797 1.92736C2.44367 1.89005 2.40057 1.86029 2.35291 1.83982C2.30525 1.81935 2.25399 1.80857 2.20212 1.80812C2.15026 1.80767 2.09882 1.81755 2.05081 1.83719C2.00281 1.85683 1.95919 1.88584 1.92252 1.92252C1.88584 1.95919 1.85683 2.00281 1.83719 2.05081C1.81755 2.09882 1.80767 2.15026 1.80812 2.20212C1.80857 2.25399 1.81935 2.30525 1.83982 2.35291C1.86029 2.40057 1.89005 2.44367 1.92736 2.4797L9.44767 10L1.92736 17.5203C1.85413 17.5936 1.81299 17.6929 1.81299 17.7965C1.81299 17.9001 1.85413 17.9994 1.92736 18.0727C2.00061 18.1459 2.09995 18.187 2.20353 18.187C2.30711 18.187 2.40645 18.1459 2.4797 18.0727L10 10.5524L17.5203 18.0727C17.5564 18.11 17.5995 18.1397 17.6471 18.1602C17.6948 18.1807 17.746 18.1915 17.7979 18.1919C17.8498 18.1924 17.9012 18.1825 17.9492 18.1628C17.9972 18.1432 18.0408 18.1142 18.0775 18.0775C18.1142 18.0408 18.1432 17.9972 18.1628 17.9492C18.1825 17.9012 18.1924 17.8498 18.1919 17.7979C18.1915 17.746 18.1807 17.6948 18.1602 17.6471C18.1397 17.5995 18.11 17.5564 18.0727 17.5203L10.5524 10Z" fill="black"/>
+                </svg>
+            </button>
+            
+            <h4 class="form__title text-center">Спасибо! Заявка отправлена</h4>
+            <h4 class="form__subtitle text-center">В течении 15 минут с вами <br> свяжется менеджер</h4>
+        </div>
+    </div>
+    <!-- END pop-up -->
+    
+
+    
+    <script src="assets/js/plugin/jquery.js"></script>
+    <script src="assets/js/plugin/mask.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/preys.js"></script>
+</body>
+</html>
