@@ -385,6 +385,35 @@
     .faqs-page {
       margin-top: 0;
     }
+    .contact {
+      &-map {
+        .location {
+          top: 27%;
+          left: 43%;
+          height: 100px;
+        }
+      }
+    }
+    
+
+    .reviews-page {
+      background: #fff;
+      margin: 40px 0 20px;
+      padding: 0;
+      .reviews-btns {
+        position: relative;
+      }
+      .col-lg-5 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .review-video {
+          width: 400px;
+          height: 350px;
+        }
+      }
+    }
+   
   }
   // END main
 
@@ -801,6 +830,16 @@
       &-map__link {
         bottom: 10px;
       }
+      &-map {
+        .location {
+          top: 33%;
+          left: 35%;
+          height: 70px;
+        }
+      }
+    }
+    .reviews-page {
+      padding-top: 0;
     }
     }
     // END main

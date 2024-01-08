@@ -1053,11 +1053,20 @@ body {
       }
       &-map {
         margin-top: 70px;
-        .map {
+        position: relative;
+        iframe {
           width: 100%;
           height: 377px;
           border-radius: 30px;
           object-fit: cover;
+          position: relative;
+        }
+        
+        .location {
+          position: absolute;
+          left: 44.5%;
+          top: 23%;
+          z-index: 99;
         }
         &__link {
           width: 225px;
@@ -1596,8 +1605,169 @@ body {
     .contact-page {
       margin: 150px 0 60px;
     }
+
+    .reviews-page {
+      background-image: url(../img/png/review-bg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 20px;
+      padding-bottom: 60px;
+      .swiper-reviews {
+        padding: 20px 0;
+        margin: 0;
+      }
+      .review {
+        margin-bottom: 12px;
+      }
+      .reviews-btns {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .review-video {
+        max-width: 576px;
+        height: 492px;
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        .video-info {
+          bottom: 14px;
+          left: 14px;
+          &:hover {
+            opacity: 0.9;
+          }
+          .text {
+            width: 176px;
+            height: 46px;
+            background: rgba(251, 251, 251, 0.90);
+            border-radius: 50px;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #2A9448;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .suptitle {
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 500;
+            color: #fff;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+          }
+        }
+        .video-js {
+          .vjs-big-play-button {
+              width: 71px;
+              height: 71px;
+              border-radius: 50%;
+              background: #fff;
+              position: relative;
+              margin: 0  !important;
+              transform: translate(-50%, -50%);
+              transition: .3s all;
+              position: relative;
+              &::before {
+                content: '';
+                width: 83px;
+                height: 83px;
+                border-radius: 50%;
+                background: #fff5;
+                position: absolute;
+                top: -8px;
+                left: -8px;
+              }
+          }
+          &:hover {
+              .vjs-big-play-button {
+                  transform: translate(-50%, -50%) scale(1.1);
+              }
+          }
+          .vjs-play-progress {
+              background-color: #24A363;
+          }
+          .vjs-volume-level {
+              background-color: #24A363; 
+          }
+          
+      }
+      .vjs-big-play-button .vjs-icon-placeholder:before {
+          content: url(../img/svg/play.svg) !important;
+          color: #24A363;
+          border-radius: 50%;
+          position: absolute !important;
+          top: 50% !important;
+          left: 50% !important;
+          transform: translate(-45%, -25%) !important;
+      }
+      .video-js {
+          width: 100%;
+          height: 100%;
+          .vjs-poster img {
+              object-fit: cover;
+              object-position: top;
+          }
+      }
+      .videos {
+          &__title {
+              font-size: 24px;
+              color: #F1F1F1;
+              font-weight: 500;
+          }
+          .view-all__link {
+              font-size: 18px;
+              color: #77778B;
+              &:hover {
+                  color: #24A363;
+              }
+          }
+      
+      
+          &-card {
+              height: 274px;
+              border-radius: 4px;
+              overflow: hidden;
+              background: #0C0D29;
+              margin-bottom: 8px;
+          }
+          .all-video {
+              &__img {
+                  width: 100%;
+                  height: 80%;
+                  object-fit: cover;
+                  object-position: top;
+              }
+              &-info {
+                  position: relative;
+                  z-index: 5;
+                  padding: 20px;
+              }
+              &__sup {
+                  font-size: 14px;
+                  color: #F1F1F1;
+                  line-height: 20px;
+              }
+              &__sub {
+                  font-size: 26px;
+                  font-weight: 500;
+                  color: #fff;
+                  line-height: 33px;
+              }
+          }
+      }
+      }
+    }
   }
   // END main
+
+  .map-widget-app {
+    filter: invert(1) hue-rotate(-190deg);
+ }
 
   // START footer
   .footer {
@@ -1654,7 +1824,7 @@ body {
       font-size: 12px;
       line-height: 14px;
     }
-  }
+  }  
   // END footer
 
 
